@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d3cc04abd6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="splide-4.0.7/dist/css/splide.min.css">
+    <script src="splide-4.0.7/dist/js/splide.min.js"></script>
+    <title>Travel Company</title>
+</head>
+
+<body onload="load()">
+    <section id="navigation__one">
+        <div class="navigation__one--contact">
+            <div class="navigation__one--contact-icon">
+                <i class="fa-solid fa-phone icon"></i>
+            </div>
+            <div class="navigation__one--contact-icon">
+                <i class="fa-solid fa-envelope icon"></i>
+            </div>
+        </div>
+        <div class="navigation__one--button">
+            <button>Get Started</button>
+        </div>
+    </section>
+    <section id="navigation__two">
+        <nav>
+            <figure class="navigation__two--logo">
+                <a href="#"><img src="./assetss/logo.png"></a>
+            </figure>
+            <ul class="nav__ul">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Locations</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+            <div class="navigation__two--buttons">
+                <div class="navigation__two--buttons-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="navigation__two--buttons-icon" onclick="openSide()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="phone__menu--wrapper">
+                <div class="phone__menu">
+                    <figure>
+                        <img src="./assetss/logo.png">
+                    </figure>
+                    <i class="fa-solid fa-xmark x-mark2" onclick="zclose()"></i>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Locations</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <header>
+        <div class="row">
+            <div class="header__wrapper">
+                <div class="header__para">
+                    <p>Special Tour Today</p>
+                </div>
+                <div class="header__title">
+                    <h1>Travel <span>Company</span></h1>
+                </div>
+                <div class="header__images--wrapper">
+                    <div class="header__image">
+                        <img src="./assetss/headerimg1.jpg" class="header__image--img">
+                        <div class="header__image--title">
+                            <h6>Paris</h6>
+                            <p>213 items</p>
+                        </div>
+                    </div>
+                    <div class="header__image">
+                        <img src="./assetss/headerimg2.jpg" class="header__image--img">
+                        <div class="header__image--title">
+                            <h6>Dubai</h6>
+                            <p>213 items</p>
+                        </div>
+                    </div>
+                    <div class="header__image">
+                        <img src="./assetss/headerimg3.jpg" class="header__image--img">
+                        <div class="header__image--title">
+                            <h6>China</h6>
+                            <p>213 items</p>
+                        </div>
+                    </div>
+                    <div class="header__image">
+                        <img src="./assetss/headerimg4.jpg" class="header__image--img">
+                        <div class="header__image--title">
+                            <h6>India</h6>
+                            <p>213 items</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="destionations">
+        <div class="row">
+            <div class="destinations__title main__title">
+                <h1><span>Our Best</span> Destination</h1>
+            </div>
+            <div class="destionations__sub-title main__sub-title">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur mollitia voluptates provident,
+                    libero quod aperiam totam molestias</p>
+            </div>
+            <div class="destinations__wrapper">
+                <div class="destination">
+                    <div class="destination__number">
+                        <span class="number">01</span>
+                        <span class="line"></span>
+                    </div>
+                    <div class="destination__desc">
+                        <div class="destination__desc--title">
+                            <h5>Germany</h5>
+                        </div>
+                        <div class="destination__desc--para">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit Totam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination">
+                    <figure class="destination__number">
+                        <span class="number">02</span>
+                        <span class="line"></span>
+                    </figure>
+                    <div class="destination__desc">
+                        <div class="destination__desc--title">
+                            <h5>Bhutan</h5>
+                        </div>
+                        <div class="destination__desc--para">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit Totam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination">
+                    <figure class="destination__number">
+                        <span class="number">03</span>
+                        <span class="line"></span>
+                    </figure>
+                    <div class="destination__desc">
+                        <div class="destination__desc--title">
+                            <h5>Ireland</h5>
+                        </div>
+                        <div class="destination__desc--para">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit Totam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination">
+                    <figure class="destination__number">
+                        <span class="number">04</span>
+                        <span class="line"></span>
+                    </figure>
+                    <div class="destination__desc">
+                        <div class="destination__desc--title">
+                            <h5>Argentina</h5>
+                        </div>
+                        <div class="destination__desc--para">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit Totam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination">
+                    <figure class="destination__number">
+                        <span class="number">05</span>
+                        <span class="line"></span>
+                    </figure>
+                    <div class="destination__desc">
+                        <div class="destination__desc--title">
+                            <h5>South Africa</h5>
+                        </div>
+                        <div class="destination__desc--para">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit Totam</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination">
+                    <figure class="destination__number">
+                        <span class="number">06</span>
+                        <span class="line"></span>
+                    </figure>
+                    <div class="destination__desc">
+                        <div class="destination__desc--title">
+                            <h5>Dubai</h5>
+                        </div>
+                        <div class="destination__desc--para">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit Totam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <div class="row">
+            <div class="gallery__sub-title">
+                <p>Locations</p>
+            </div>
+            <div class="gallery__title main__title">
+                <h1><span>Our</span> Travel <span>Gallery</span></h1>
+            </div>
+        </div>
+        <div class="splide">
+            <div style="position: relative">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="splide__slide--block">
+                                <div class="splide__slide--block-para">
+                                    <p>Kespers</p>
+                                </div>
+                                <div class="splide__slide--block-title">
+                                    <h1>Italy</h1>
+                                </div>
+                                <div class="splide__slide--block-desc">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, temporibus
+                                    rem.
+                                    In nobis hic nisi alias optio accusantium, asperiores quo, laboriosam
+                                </div>
+                            </div>
+                            <div class="splide__slide--block">
+                                <img src="./assetss/splide.jpg" class="splide__slide--block-img">
+                                <button class="splide__slide--block-btn">Travel Details <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide--block">
+                                <div class="splide__slide--block-para">
+                                    <p>Kespers</p>
+                                </div>
+                                <div class="splide__slide--block-title">
+                                    <h1>Italy</h1>
+                                </div>
+                                <div class="splide__slide--block-desc">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, temporibus
+                                    rem.
+                                    In nobis hic nisi alias optio accusantium, asperiores quo, laboriosam
+                                </div>
+                            </div>
+                            <div class="splide__slide--block">
+                                <img src="./assetss/splide2.jpg" class="splide__slide--block-img">
+                                <button class="splide__slide--block-btn">Travel Details <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="splide__slide--block">
+                                <div class="splide__slide--block-para">
+                                    <p>Kespers</p>
+                                </div>
+                                <div class="splide__slide--block-title">
+                                    <h1>Italy</h1>
+                                </div>
+                                <div class="splide__slide--block-desc">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, temporibus
+                                    rem.
+                                    In nobis hic nisi alias optio accusantium, asperiores quo, laboriosam
+                                </div>
+                            </div>
+                            <div class="splide__slide--block">
+                                <img src="./assetss/splide3.jpg" class="splide__slide--block-img">
+                                <button class="splide__slide--block-btn">Travel Details <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="row">
+            <div class="services__title main__title">
+                <h1><span>Our</span> Services</h1>
+            </div>
+            <div class="services__sub-title main__sub-title">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur mollitia voluptates provident,
+                    libero quod aperiam totam molestias</p>
+            </div>
+            <div class="services__wrapper">
+                <div class="service">
+                    <div class="service__info">
+                        <div class="service__img">
+                            <i class="fa-solid fa-plane"></i>
+                        </div>
+                        <div class="service__title">
+                            <h6>Passionate Travel</h6>
+                        </div>
+                        <div class="service__para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt, ipsam facilis
+                            exercitationem sit commodi ducimus atque quod cumque eos animi quasi
+                        </div>
+                        <div class="service__list">
+                            <div class="service__list--item">
+                                <p><span>- </span>Living the Travel LifeStyle</p>
+                                <p><span>- </span>Living the Travel LifeStyle</p>
+                                <p><span>- </span>Living the Travel LifeStyle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service__info">
+                        <div class="service__img">
+                            <i class="fa-solid fa-file-contract"></i>
+                        </div>
+                        <div class="service__title">
+                            <h6>Support Team</h6>
+                        </div>
+                        <div class="service__para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt, ipsam facilis
+                            exercitationem sit commodi ducimus atque quod cumque eos animi quasi
+                        </div>
+                        <div class="service__list">
+                            <div class="service__list--item">
+                                <p><span>- </span>Celebrating Green Day Streams</p>
+                                <p><span>- </span>Celebrating Green Day Streams</p>
+                                <p><span>- </span>Celebrating Green Day Streams</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service__info">
+                        <div class="service__img">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="service__title">
+                            <h6>Beautiful Places</h6>
+                        </div>
+                        <div class="service__para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo deserunt, ipsam facilis
+                            exercitationem sit commodi ducimus atque quod cumque eos animi quasi
+                        </div>
+                        <div class="service__list">
+                            <div class="service__list--item">
+                                <p><span>- </span>Europan World And Involved</p>
+                                <p><span>- </span>Europan World And Involved</p>
+                                <p><span>- </span>Europan World And Involved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tips">
+        <div class="tips__wrapper">
+            <figure class="tips__block">
+                <img src="./assetss/videoimg.jpg" class="javaImg">
+                <i class="fa-solid fa-play play" onclick="openVideo()"></i>
+            </figure>
+            <div class="tips__block">
+                <div class="tips__block--para">
+                    <p>Why Choose Us</p>
+                </div>
+                <div class="tips__block--title  main__title">
+                    <h1><span>Tips Before Travel</span> To Any Destination</h1>
+                </div>
+                <div class="tips__block--desc main__sub-title">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor voluptatem, voluptatibus totam
+                        assumenda blanditiis aliquam est sapiente quis temporibus? Voluptate excepturi nam quam expedita
+                        qui? Quos libero voluptatum soluta delectus.</p>
+                </div>
+                <div class="tips__block--button">
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="video__wrapper">
+        <i class="fa-solid fa-xmark x-mark" onclick="closeVideo()"></i>
+        <iframe src="https://www.youtube.com/embed/gsnqXt7d1mU?autoplay=1">
+        </iframe>
+    </div>
+    <footer>
+        <div class="footer__wrapper">
+            <div class="footer__block">
+                <ul class="footer__block--menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__block footer__logo">
+                <img src="./assetss/logo.png">
+            </div>
+            <div class="footer__block">
+                <ul class="social">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <p>&copy; Kespers - <span>2022</span></p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                type: 'loop',
+                padding: '4rem',
+                pagination: false,
+                prev: 'splide__arrow--prev your-class-prev',
+                next: 'splide__arrow--next your-class-next',
+            });
+            splide.mount();
+        });
+    </script>
+</body>
+
+</html>
