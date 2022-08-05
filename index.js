@@ -12,6 +12,13 @@ function load() {
     if (window.innerWidth < 960) {
         document.querySelector(" .javaImg").src = "./assetss/videoimg1.jpg";
     }
+    setTimeout(() => {
+        document.querySelector(".loader__wrapper").style.opacity = 0;
+    }, 1000);
+
+    setTimeout(() => {
+        document.querySelector(".loader__wrapper").style.dispplay = "none";
+    }, 1400);
 }
 
 function openSide() {
