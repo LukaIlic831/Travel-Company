@@ -15,9 +15,10 @@ function load() {
     setTimeout(() => {
         document.querySelector(".loader__wrapper").style.opacity = 0;
     }, 1000);
-
+    console.log(2)
     setTimeout(() => {
-        document.querySelector(".loader__wrapper").style.dispplay = "none";
+        document.querySelector(".loader__wrapper").style.display = "none";
+        console.log(2)
     }, 1400);
 }
 
